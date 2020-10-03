@@ -8,18 +8,16 @@ int debounce = 150;
 long time = 0;
 
 int notes[] = {
-   NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_F3, NOTE_G3, NOTE_G3, NOTE_C4,
-  NOTE_C3, NOTE_D3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_A3,
-  NOTE_B3, NOTE_D4, NOTE_C4, NOTE_A3, NOTE_A3, NOTE_A3, NOTE_A3, NOTE_B3,
-  NOTE_C4, NOTE_D4, NOTE_G3, NOTE_C4, NOTE_D4, NOTE_E4, NOTE_E4, NOTE_E4,
-  NOTE_D4, NOTE_D4, NOTE_C4, NOTE_E4, NOTE_D4
+  NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_F3, NOTE_G3, NOTE_G3, NOTE_C4, 0, NOTE_C3, NOTE_D3, 
+  NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_E3, NOTE_A3, NOTE_B3, NOTE_D4, NOTE_C4, 0, 0,
+  NOTE_A3, NOTE_A3, NOTE_A3, NOTE_A3, NOTE_B3, NOTE_C4, NOTE_D4, NOTE_G3, 0, NOTE_C4, NOTE_D4, 
+  NOTE_E4, NOTE_E4, NOTE_E4, NOTE_D4, NOTE_D4, NOTE_C4, NOTE_E4, NOTE_D4, 0
 };
 int notesDurations[] = {
-  2, 4, 4, 4, 4, 4, 2, 2,
-  4, 4, 4, 4, 4, 4, 4, 4,
-  4, 2, 2, 2, 4, 4, 4, 4,
-  4, 2, 2, 4, 4, 4, 4, 4,
-  4, 4, 4, 2, 2
+  2, 4, 4, 4, 4, 4, 2, 1, 4, 4, 4, 
+  4, 4, 4, 4, 4, 4, 4, 2, 1, 2, 4,
+  2, 4, 4, 4, 4, 4, 2, 1, 4, 4, 4, 
+  4, 4, 4, 4, 4, 4, 2, 1, 1
 };
 
 void setup() {
